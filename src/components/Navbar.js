@@ -6,6 +6,10 @@ import "../style/Navbar.css";
 import logo from "../asset/new_logo_anti.png";
 import "../App.css";
 
+
+
+
+
 function Navbar(props) {
   const { cart } = useContext(CartContext);
 

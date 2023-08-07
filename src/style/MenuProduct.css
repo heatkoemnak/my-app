@@ -1,0 +1,31 @@
+.menu-category {
+  width: 20%;
+  height: 100%;
+  background-color: rgb(97, 239, 154);
+}
+.menu-item {
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid var(--black-tertiary-color);
+}
+.menu-item .item {
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--black-tertiary-color);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.menu-item a {
+  color: var(--dark-green-color);
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-left: 10px;
+}
+.menu-item a:hover {
+  color: var(--green-primary-color);
+  background-color: rgb(255, 255, 255);
+}

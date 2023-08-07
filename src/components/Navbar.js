@@ -1,35 +1,116 @@
 import { useContext } from "react";
 import CartContext from "../CartContext";
-
+import { styled } from "styled-components";
 import { Link } from "react-router-dom";
 import "../style/Navbar.css";
 import logo from "../asset/new_logo_anti.png";
 import "../App.css";
 
+const Container = styled.div`
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  
 
+`;
 
+const WrapContainer= styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 10px auto;
+  padding: 0 4rem;
 
+`
+const Logo = styled.div`
+  width: 120px;
+ 
+`
+const Links = styled.div`
+align-items: center;
+justify-content: center;
+
+`
+const List = styled.ul`
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+font-size: 1.2rem;
+
+`
+const ListItem = styled.li`
+list-style: none;
+cursor: pointer;
+transition: all 0.3s ease-in-out;
+
+`
+const Icon = styled.div`
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+`
+const SearchIcon = styled.div`
+
+`
+const CartIcon = styled.div`
+position: relative;
+padding: 15px;
+
+`
+const CartCount = styled.div`
+position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  color: #ffffff;
+  text-align: center;
+  line-height: 20px;
+  font-size: 0.8rem;
+`
+const CartBtn = styled.div`
+font-size: 1.5rem;
+  color: #000000;
+  border-radius: 3px;
+  background-color: #ffffff;
+  cursor: pointer;
+
+`
 
 function Navbar(props) {
   const { cart } = useContext(CartContext);
 
   return (
-    <nav className="nav-bar">
-      <div className="nav-container">
-        <div className="logo">
-          <Link className="item" to="/">
+    <Container>
+      <WrapContainer>
+        <Logo>
+          <Link to="/">
             <img src={logo} alt="anti" width={120} />
           </Link>
-        </div>
+        </Logo>
 
-        <div className="links">
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Service</li>
-          </ul>
-        </div>
+        <Links>
+          <List>
+            <ListItem>Home</ListItem>
+            <ListItem>About</ListItem>
+            <ListItem>Contact</ListItem>
+            <ListItem>Service</ListItem>
+          </List>
+        </Links>
 
         {/* <div className="search-bar">
           <button
@@ -47,28 +128,28 @@ function Navbar(props) {
           />
           <i className="bx bx-search search-btn"></i>
         </div> */}
-        <div className="icon">
+        <Icon>
           <div className="search">
             <i className="bx bx-search search-btn"></i>
           </div>
-          <div className="nav-icon">
+          <CartIcon>
             <Link to="/cart">
-              <i className="bx bxs-cart-download cart-icon ">
+              <CartBtn className="bx bxs-cart-download ">
                 <div className="count-item">
-                  <span className="value-count">{cart.length}</span>
+                  <CartCount>{cart.length}</CartCount>
                 </div>
-              </i>
+              </CartBtn>
             </Link>
-          </div>
+          </CartIcon>
           <div className="btn">
             <button>Login</button>
             <button>Register</button>
           </div>
         
-        </div>
+        </Icon>
         
-      </div>
-    </nav>
+      </WrapContainer>
+    </Container>
   );
 }
 

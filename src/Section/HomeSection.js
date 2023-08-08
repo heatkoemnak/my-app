@@ -4,7 +4,7 @@ import landGreen from "../asset/land-green.jpg"
 
 
 const Section = styled.div`
-    height: 150vh;
+    height: 120vh;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     width:100%;
@@ -138,8 +138,6 @@ const Search = styled.div`
     color: #fff;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     font-family: 'Nunito Sans', sans-serif;
-    
-    
     `
     const Text2 = styled.h2`
     position:absolute;
@@ -174,7 +172,7 @@ const Search = styled.div`
         color:#fff;
     }
         `
-        const Text = styled.h2`
+        const Text = styled.p`
         font-size:1.5rem;
         font-weight: 500;
         text-align: center;
@@ -208,15 +206,18 @@ export default function HomeSection() {
       <Features>
         <Feature>
             <img src="https://images.pexels.com/photos/5632381/pexels-photo-5632381.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" width={261} height={160}/>
-            <Text>SELL</Text>
+            <i class='bx bx-package' ></i><Text>
+            SELL</Text>
             </Feature>
         <Feature>
             <img src="https://images.pexels.com/photos/2988232/pexels-photo-2988232.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" width={261} height={160} />
-            <Text>BUY</Text>
+            <i class='bx bx-shopping-bag'></i><Text>BUY</Text>
             </Feature>
         <Feature>
         <img src="https://images.pexels.com/photos/3850587/pexels-photo-3850587.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" width={261} height={160}/>
-            <Text>RECYCLE</Text>
+            <i class='bx bx-recycle' ></i>
+            <Text>
+            RECYCLE</Text>
             </Feature>
       </Features>
       

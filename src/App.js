@@ -1,6 +1,5 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import {styled} from "styled-components"
 
 import Home from "./Pages/Home";
 import Navbar from "./components/Navbar";
@@ -19,7 +18,6 @@ import React, { useState } from "react";
 import Cart from "./Pages/Cart";
 import { CartProvider } from "./CartContext";
 import HomeSection from "./Section/HomeSection";
-import AboutSection from "./Section/AboutSection";
 
 function App() {
   const [menu, setMenu] = useState(false);

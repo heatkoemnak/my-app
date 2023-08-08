@@ -27,18 +27,6 @@ function App() {
     setMenu((menu) => !menu);
   };
 
-  // const Container = styled.div`
-  // heigh:100vh;
-  // scroll-snap-type:y mandatory;
-  // scroll-behavior:smooth;
-  // overflow-y:auto;
-  // scrollbar-width:none;
-  // &::-webkit-scrollbar{
-  //   display:none;
-  // }
-
-
-  // `
 
   return (
 
@@ -48,7 +36,7 @@ function App() {
         <Router>
           {/* <Navbar/> */}
           <Navbar handleMenu={handleMenu}></Navbar>
-          {/* <HomeSection/> */}
+          <HomeSection/>
           {/* <Navbar handleMenu={handleMenu}></Navbar> */}
           <div className="routes">
             {menu ? <MenuProduct /> : null}

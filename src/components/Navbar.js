@@ -28,9 +28,11 @@ function Navbar(props) {
               <ListItem>Home</ListItem>
             </Link>
 
+            
+            <ListItem>Service</ListItem>
+            <ListItem>FAQ</ListItem>
             <ListItem>About</ListItem>
             <ListItem>Contact</ListItem>
-            <ListItem>Service</ListItem>
           </List>
         </Links>
 
@@ -79,6 +81,7 @@ function Navbar(props) {
 export default Navbar;
 
 const Container = styled.div`
+  font-family: 'Nunito Sans', sans-serif;
   position: sticky;
   top: 0;
   width: 100%;
@@ -171,11 +174,19 @@ const Btn = styled.div`
 `
 const LogSignBtn=styled.button`
   border: none;
-  color: white;
-  cursor: pointer;
-  border-radius: 15px;
   width: 110px;
-  padding: 7px;
-  background-color: #33bb24;    
+  background-color: #56b74e;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: #111;
+    color: green;
+  }
+  font-family: 'Nunito Sans', sans-serif;  
 
 `

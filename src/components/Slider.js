@@ -11,6 +11,7 @@ import image4 from "../asset/s001.png";
 import image5 from "../asset/banner8.png";
 import image9 from "../asset/banner9.jpg";
 import image10 from "../asset/banner10.jpg";
+import image11 from "../asset/freebanner.jpg";
 
 import loca from "../asset/loca.avif";
 
@@ -56,6 +57,7 @@ function CamSlider() {
     image5,
     image9,
     image10,
+    image11,
   ]);
 
   useEffect(() => {

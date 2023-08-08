@@ -10,10 +10,9 @@
   --menu-green-color: #4cb50b;
 }
 
-
-.nav-icon {
-  position: relative;
-  padding: 15px;
+.link{
+  text-decoration: none;
+  
 }
 .all-menu {
   font-size: 1rem;
@@ -66,32 +65,5 @@
   margin-right: 6px;
   padding: 0 10px;
 }
-
-
-
-.icon{
-  width: 300px;
-  /* background-color: #848484; */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.btn{
-  display: flex;
-  gap: 10px;
-}
-.btn >button{
-  border: none;
-  color: white;
-  cursor: pointer;
-  border-radius: 15px;
-  width: 110px;
-  padding: 7px;
-  background-color: #33bb24;
-
-
-}
-
 
 

@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { styled } from "styled-components";
 
 
@@ -11,16 +12,11 @@ const Section = styled.div`
     &::-webkit-scrollbar {
         display: none;
     }
-        
 `
 
-export default function HomeSection() {
-  
+
+export default function AboutSection() {
   return (
-    <>
-    <Section>
-      HomeSection
-    </Section>
-    </>
+    <Section>AboutSection</Section>
   )
 }

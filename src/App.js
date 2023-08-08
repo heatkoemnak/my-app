@@ -1,5 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {styled} from "styled-components"
 
 import Home from "./Pages/Home";
 import Navbar from "./components/Navbar";
@@ -18,6 +19,7 @@ import React, { useState } from "react";
 import Cart from "./Pages/Cart";
 import { CartProvider } from "./CartContext";
 import HomeSection from "./Section/HomeSection";
+import AboutSection from "./Section/AboutSection";
 
 function App() {
   const [menu, setMenu] = useState(false);
@@ -25,11 +27,28 @@ function App() {
     setMenu((menu) => !menu);
   };
 
+  // const Container = styled.div`
+  // heigh:100vh;
+  // scroll-snap-type:y mandatory;
+  // scroll-behavior:smooth;
+  // overflow-y:auto;
+  // scrollbar-width:none;
+  // &::-webkit-scrollbar{
+  //   display:none;
+  // }
+
+
+  // `
+
   return (
+
+
     <div className="App">
       <CartProvider>
         <Router>
-          <HomeSection/>
+          {/* <Navbar/> */}
+          <Navbar handleMenu={handleMenu}></Navbar>
+          {/* <HomeSection/> */}
           {/* <Navbar handleMenu={handleMenu}></Navbar> */}
           <div className="routes">
             {menu ? <MenuProduct /> : null}

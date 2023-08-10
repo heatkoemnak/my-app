@@ -128,6 +128,7 @@ const Search = styled.div`
     flex-direction:column;
     align-items:center;
     justify-content:center;
+    padding:15px;
     width:100%;
     cursor: pointer;
     font-weight:500;
@@ -136,7 +137,7 @@ const Search = styled.div`
     color:#000;
     box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
     &:hover {
-        background-color: #ebf9f9;
+        background-color: #f3f6f5;
         color:#fff;
     }
     `
@@ -178,7 +179,7 @@ export default function HomeSection() {
   return (
     <>
     <MainContainer>
-        <IconContext.Provider value={{ size:'4rem', color:'#7cd553'}}>
+        <IconContext.Provider value={{ size:'3rem', color:'#7cd553'}}>
             <Image>
                 <img src={landGreen} alt="" height={500} width={1519}/>
             </Image>
@@ -200,7 +201,7 @@ export default function HomeSection() {
                     <H2>Our Features</H2>
                     <RxDoubleArrowDown/>
                 </FeatureMove>
-                <img src='https://www.danofficeit.com/media/3330/topbanner.png' alt=''width={1520}/>
+                <img src='https://www.danofficeit.com/media/3330/topbanner.png' alt=''width={1519}/>
                 <Features>
                         <Feature>
                             <img src="https://images.pexels.com/photos/5632381/pexels-photo-5632381.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" width={265} height={160}/>
@@ -214,7 +215,7 @@ export default function HomeSection() {
                         </Feature>
                         <Feature>
                             <img src="https://images.pexels.com/photos/3850587/pexels-photo-3850587.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" width={260} height={160}/>
-                            <FontAwesomeIcon icon={faRecycle} size='4x' color='#7cd553' />
+                            <FontAwesomeIcon icon={faRecycle} size='3x' color='#7cd553' />
                             <Text>RECYCLE</Text>
                         </Feature>
                 </Features>

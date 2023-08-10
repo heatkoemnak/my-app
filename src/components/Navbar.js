@@ -29,7 +29,7 @@ function Navbar(props) {
             </Link>
 
             
-            <ListItem>Service</ListItem>
+            <ListItem>Features</ListItem>
             <ListItem>FAQ</ListItem>
             <ListItem>About</ListItem>
             <ListItem>Contact</ListItem>

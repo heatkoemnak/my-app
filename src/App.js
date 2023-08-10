@@ -28,14 +28,11 @@ function App() {
 
   return (
 
-
     <div className="App">
       <CartProvider>
         <Router>
-          {/* <Navbar/> */}
           <Navbar handleMenu={handleMenu}></Navbar>
           <HomeSection/>
-          {/* <Navbar handleMenu={handleMenu}></Navbar> */}
           <div className="routes">
             {menu ? <MenuProduct /> : null}
             <div className="right-page">

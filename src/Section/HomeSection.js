@@ -1,15 +1,35 @@
 import React from 'react'
 import { styled } from "styled-components";
 import landGreen from "../asset/land-green.jpg"
+import {IconContext} from 'react-icons';
+import { FaHandHoldingDollar, FaShopify, FaTag } from "react-icons/fa6";
 
 
+
+const MainContainer=styled.div`
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color: #b0dfc5;
+background-image: linear-gradient(45deg, #b0dfc5 0%, #e0f5c1 100%);
+
+    justify-content:center;
+//     background: #D3CCE3;
+// background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+    
+    
+    z-index:-1;
+
+`
 const Section = styled.div`
     height: 120vh;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
-    width:100%;
-    display: flex;
-    flex-direction: column;
+    width:80%;
     align-items: center;
     justify-content: center;
     margin:0 auto;
@@ -42,7 +62,7 @@ const Image = styled.div`
     top: 0;
     left: 0;
     right:0;
-    z-index:-10;
+    
     `
 
 
@@ -163,12 +183,15 @@ const Search = styled.div`
     cursor: pointer;
     font-weight:500;
     transition: all 0.3s ease-in-out;
-    background-color: #fff;
+    // background-color: #fff;
+    background-color: #f4fffb;
+    
+
     color:#000;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     
     &:hover {
-        background-color: gray;
+        background-color: #ebf9f9;
         color:#fff;
     }
         `
@@ -188,6 +211,8 @@ export default function HomeSection() {
   
   return (
     <>
+    <MainContainer>
+        <IconContext.Provider value={{ size:'4rem', color:'#7cd553'}}>
     <Image>
         <img src={landGreen} alt="" height={500} width={1519}/>
     </Image>
@@ -206,22 +231,24 @@ export default function HomeSection() {
       <Features>
         <Feature>
             <img src="https://images.pexels.com/photos/5632381/pexels-photo-5632381.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" width={261} height={160}/>
-            <i class='bx bx-package' ></i><Text>
+            <FaTag/><Text>
             SELL</Text>
             </Feature>
         <Feature>
             <img src="https://images.pexels.com/photos/2988232/pexels-photo-2988232.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" width={261} height={160} />
-            <i class='bx bx-shopping-bag'></i><Text>BUY</Text>
+            <FaShopify/><Text>BUY</Text>
             </Feature>
         <Feature>
         <img src="https://images.pexels.com/photos/3850587/pexels-photo-3850587.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" width={261} height={160}/>
-            <i class='bx bx-recycle' ></i>
+        <FontAwesomeIcon icon="fa-duotone fa-bin-bottles-recycle" />
             <Text>
             RECYCLE</Text>
             </Feature>
       </Features>
       
     </Section>
+    </IconContext.Provider>
+    </MainContainer>
     
     </>
   )

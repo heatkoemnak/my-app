@@ -6,7 +6,7 @@ import {FaShopify, FaTag } from "react-icons/fa6";
 import { RxDoubleArrowDown } from "react-icons/rx";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faRecycle,faMagnifyingGlass, faArrowCircleDown  } from '@fortawesome/free-solid-svg-icons'
+import { faRecycle,faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons'
 
 const MainContainer=styled.div`
     width:100%;

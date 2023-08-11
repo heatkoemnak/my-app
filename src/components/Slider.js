@@ -11,7 +11,6 @@ import image4 from "../asset/s001.png";
 import image5 from "../asset/banner8.png";
 import image9 from "../asset/banner9.jpg";
 import image10 from "../asset/banner10.jpg";
-import image11 from "../asset/freebanner.jpg";
 
 import loca from "../asset/loca.avif";
 
@@ -28,25 +27,34 @@ function CamSlider() {
   const location = [
     {
       id: 1,
-      name: "Singapore",
+      name: "Hà Nội",
       image: loca,
     },
     {
       id: 2,
-      name: "Philips",
+      name: "Hồ Chí Minh",
       image: loca,
     },
     {
       id: 3,
-      name: "Thailand",
+      name: "Đà Nẵng",
       image: loca,
     },
     {
       id: 1,
-      name: "Cambodia",
+      name: "Hà Nội",
       image: loca,
     },
-    
+    {
+      id: 2,
+      name: "Hồ Chí Minh",
+      image: loca,
+    },
+    {
+      id: 3,
+      name: "Đà Nẵng",
+      image: loca,
+    },
   ];
 
   const [selectImage, setSelectImage] = useState(1);
@@ -57,7 +65,6 @@ function CamSlider() {
     image5,
     image9,
     image10,
-    image11,
   ]);
 
   useEffect(() => {
@@ -76,7 +83,18 @@ function CamSlider() {
     <>
       <div className="main-campagn">
         <div className="feature">
-          
+          <Link className="feature-list" to="/">
+            <i class="bx bx-store"></i>
+            sell product
+          </Link>
+          <Link className="feature-list" to="/Service">
+            <i class="bx bxs-donate-blood"></i>
+            service oprovider
+          </Link>
+          <Link className="feature-list" to="/Shop">
+            <i class="bx bx-station"></i>
+            nearby enterprise
+          </Link>
           <div className="location">
             <Slider {...settings}>
               {location.map((locationItems) => {

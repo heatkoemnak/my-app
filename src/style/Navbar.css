@@ -10,73 +10,32 @@
   --menu-green-color: #4cb50b;
 }
 
-.logo {
-  font-weight: 700;
-  text-transform: uppercase;
-  cursor: pointer;
-  margin: 0 0 0 10px;
-  padding: 0;
-  font-weight: 700;
-  font-size: 3rem;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-li,
-a,
-h2,
-button {
+.link{
   text-decoration: none;
-  list-style: none;
-  color: inherit;
-  outline: none;
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-}
-
-.nav-bar {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background: var(--navbar-background-color);
-  z-index: 1;
-}
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 0 4rem;
-}
-.nav-icon {
-  position: relative;
-  padding: 15px;
+  
 }
 .all-menu {
-  border: #3a3636;
-  width: 130px;
-  padding: 11.5px;
+  font-size: 1rem;
+  color: #000000;
+  border-radius: 3px;
+  background-color: #ededed;
   cursor: pointer;
+  margin-right: 6px;
+  padding: 0 10px;
+  outline:none;
+  
 }
 .all-menu i {
-  color: #6f6f6f;
-  cursor: pointer;
-  width: 100%;
+  color: #000000;
+  border-radius: 3px;
+  
 }
 .search-bar {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: aliceblue;
+  background-color: rgb(237, 237, 237);
+  border-radius: 20px;
   width: 65%;
 }
 .search-input {
@@ -106,24 +65,6 @@ button {
   margin-right: 6px;
   padding: 0 10px;
 }
-.cart-icon {
-  font-size: 1.5rem;
-  color: #000000;
-  border-radius: 3px;
-  background-color: #ffffff;
-  cursor: pointer;
-}
 
-.nav-icon .value-count {
-  position: absolute;
-  top: 1px;
-  right: 1px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #ff0000;
-  color: #ffffff;
-  text-align: center;
-  line-height: 20px;
-  font-size: 0.8rem;
-}
+
+  @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Jost:ital,wght@0,300;0,400;0,600;1,600&family=Nunito+Sans&family=Poppins:wght@400;700&family=Roboto:wght@300&display=swap');

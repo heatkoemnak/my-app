@@ -55,17 +55,21 @@ const Teams = styled.div`
     align-items: center;
     background-color: #220925;
     color: #fff;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-    overflow-y: auto;
-    scrollbar-width: none;
-    &::-webkit-scrollbar {
-        display: none;
-
+    div{
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        // background-color:#f4f3fc;
+        h2{
+            font-size: 1.2rem;
+        }
+        p{
+            font-size: 1rem;
+        }
     }
-
     @media screen and(max-width :768px){
         h1{
             font-size: 2rem;
@@ -111,26 +115,23 @@ const Teams = styled.div`
 
    
 `
-const Group = styled.div`
+const Team = styled.div`
     display:flex;
     flex-wrap:wrap;
-    justify-content:center;
+    justify-content:space-around;
     align-items:center;
    
 `
 const Profile = styled.div`
-    width:100%;
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    background-color:#f8f2fd;
-    padding:15px;
-    margin:15px;
     img{
         width:200px;
         height:200px;
         border-radius:50%;
+        margin:10px;
 
     }
     h2{
@@ -151,40 +152,53 @@ const Profile = styled.div`
 
 export default function AboutSection() {
   return (
+    <Section>
       <Teams>
         <FeatureMove>
             <H2>Our Team</H2>
             <RxDoubleArrowDown size='3rem'color='#7cd553'/>
         </FeatureMove>
-        <Group>
+        <Team>
+          <div>
             <Profile>
               <img src={sopheak} alt=''width={200}/>
               <h2>Saing Sopheak</h2>
               <p>Team 1</p>
             </Profile>
+            
+          </div>
+          <div>
             <Profile>
               <img src={koemnak} alt=''width={200}/>
               <h2>HeatKoemnak</h2>
               <p>Team 2</p>
             </Profile>
+          </div>
+          <div>
             <Profile>
               <img src={soumany} alt=''width={200}/>
               <h2>Sou Many</h2>
               <p>Team 3</p>
             </Profile>
+          </div>
+          <div>
           <Profile>
               <img src={sodana} alt=''width={200}/>
               <h2>Som Sodana</h2>
               <p>Team 4</p>
           </Profile>
 
+          </div>
+          <div>
             <Profile>
               <img src={chhaylin} alt=''width={200}/>
               <h2>Srun ChhayLin</h2>
               <p>Team 5</p>
             </Profile>
-        </Group>
+          </div>
+        </Team>
        
       </Teams>
+      </Section>
   )
 }

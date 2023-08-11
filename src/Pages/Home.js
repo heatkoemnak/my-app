@@ -3,6 +3,7 @@ import "./CSS/home.css";
 import Product from "../components/Product";
 import Slider from "../components/Slider";
 import "../style/Product.css";
+import "../style/header.css";
 import { useContext } from "react";
 import CartContext from "../CartContext";
 

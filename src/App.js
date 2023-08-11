@@ -17,6 +17,8 @@ import BagSlider from "./SLIDER/BagSlider";
 import React, { useState } from "react";
 import Cart from "./Pages/Cart";
 import { CartProvider } from "./CartContext";
+import HomeSection from "./Section/HomeSection";
+import AboutSection from "./Section/AboutSection";
 
 function App() {
   const [menu, setMenu] = useState(false);
@@ -24,11 +26,15 @@ function App() {
     setMenu((menu) => !menu);
   };
 
+
   return (
+
     <div className="App">
       <CartProvider>
         <Router>
           <Navbar handleMenu={handleMenu}></Navbar>
+          <HomeSection/>
+          <AboutSection/>
           <div className="routes">
             {menu ? <MenuProduct /> : null}
             <div className="right-page">

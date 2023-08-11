@@ -27,9 +27,12 @@
 
 .product-add_to_cart {
   border: none;
+  
 }
 .product-add_to_cart button {
   color: white;
   padding: 0.8rem 2rem;
-  background-color: chartreuse;
+  background-color: rgb(78, 155, 1);
+  border: none;
+  cursor: pointer;
 }

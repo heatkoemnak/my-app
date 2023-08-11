@@ -164,7 +164,7 @@ export default function AboutSection() {
               <img src={sopheak} alt=''width={200}/>
               <h2>Saing Sopheak</h2>
               <p>Role</p>
-              <p>Team Leader, Backend &</p>
+              <p>Team Leader, Backend & Server Side</p>
               <button>To Know More</button>
             </Profile>
             

@@ -1,0 +1,26 @@
+
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.links > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+.links > ul > li{
+    text-decoration:none;
+    list-style: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.Icons{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

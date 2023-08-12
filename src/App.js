@@ -17,6 +17,7 @@ import Cart from "./Pages/Cart";
 import { CartProvider } from "./CartContext";
 import HomeSection from "./Section/Home/HomeSection";
 import AboutSection from "./Section/About/AboutSection";
+import Layout from "./Shop/Layout/Layout";
 
 
 
@@ -29,6 +30,7 @@ function App() {
           {/* <Navbar handleMenu={handleMenu}></Navbar>/ */}
           <HomeSection/>
           <AboutSection/>
+          <Layout/>
           <div className="routes">
               <Routes>
                 <Route path="/fashion" element={<FashionSlider />} />
@@ -40,7 +42,7 @@ function App() {
               </Routes>
             </div>
           <Routes>
-            <Route path="/cart" element={<Cart />} />
+            <Route path="/cart" element={<Ca element={<Layout />} />
           </Routes>
 
           <div className="browse">

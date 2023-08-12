@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons'
 
 
-
+import { Link } from 'react-router-dom';
 import FeaturedSection from '../Featured/FeaturedSection';
 import Navbar from '../../components/Navbar';
 
@@ -111,7 +111,9 @@ export default function HomeSection() {
                     <Title>
                         <h1>Join With Us</h1>
                         <h2>To Protect Our Environment</h2>
-                        <Button>Get Start Shopping Here</Button>
+                        <Link to ='/shop'>
+                            <Button>Get Start Shopping Here</Button>
+                        </Link>
                     </Title>
                     
                 </SearchANDTitle>

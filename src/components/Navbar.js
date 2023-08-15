@@ -11,14 +11,14 @@ function Navbar(props) {
   const { cart } = useContext(CartContext);
 
   return (
-    <Container>
-      <WrapperContainer>
+    <div className="navbar">
+      <div className="wrapper">
         <div className="logo">
           <Link to="/">
             <img src={logo} alt="anti" width={120} />
           </Link>
         </div>
-        <div className="links">
+        <div className="links-navigate">
           <ul>
               <li>Home</li>
               <li>Features</li>
@@ -29,18 +29,7 @@ function Navbar(props) {
         </div>
 
         <div className="Icons">
-          <div className="search">
-            <i className="bx bx-search search-btn"></i>
-          </div>
-          <CartIcon>
-            <Link to="/cart">
-              <CartBtn className="bx bxs-cart-download ">
-                <div className="count-item">
-                  <CartCount>{cart.length}</CartCount>
-                </div>
-              </CartBtn>
-            </Link>
-          </CartIcon>
+          
           <Btn>
             <LogSignBtn>Login</LogSignBtn>
             <LogSignBtn>Register</LogSignBtn>
@@ -48,8 +37,10 @@ function Navbar(props) {
         
         </div>
         
-      </WrapperContainer>
-      </Container>
+      </div>
+      </div>
+
+      
      
   );
 }
@@ -57,55 +48,7 @@ function Navbar(props) {
 
 export default Navbar;
 
-const Container= styled.div`
-  width:100%;
-  position:fixed;
-  display:flex;
-  height:100px;
-  align-items:center;
-  top:0;
-  background-color:#fffffa;
-  z-index:1;
 
-`
-
-const  WrapperContainer = styled.div`
-  width:80%;
-  display:flex;
-  margin:0 auto;
-  justify-content: space-between;
-  align-items:center;
-
-
-`
-
-
-const CartIcon = styled.div`
-position: relative;
-padding: 15px;
-
-`
-const CartCount = styled.div`
-position: absolute;
-  top: 1px;
-  right: 1px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #ff0000;
-  color: #ffffff;
-  text-align: center;
-  line-height: 20px;
-  font-size: 0.8rem;
-`
-const CartBtn = styled.div`
-font-size: 1.5rem;
-  color: #000000;
-  border-radius: 3px;
-  background-color: #ffffff;
-  cursor: pointer;
-
-`
 const Btn = styled.div`
   display: flex;
   align-items: center;

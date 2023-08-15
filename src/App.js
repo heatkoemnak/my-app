@@ -13,11 +13,8 @@ import ShoesSlider from "./SLIDER/ShoesSlider";
 import BagSlider from "./SLIDER/BagSlider";
 
 import React from "react";
-import Cart from "./Pages/Cart";
 import { CartProvider } from "./CartContext";
 import HomeSection from "./Section/Home/HomeSection";
-import AboutSection from "./Section/About/AboutSection";
-import Layout from "./Shop/Layout/Layout";
 
 
 
@@ -27,10 +24,10 @@ function App() {
     <div className="App">
       <CartProvider>
         <Router>
-          {/* <Navbar handleMenu={handleMenu}></Navbar>/ */}
-          <HomeSection/>
-          <AboutSection/>
-          <Layout/>
+          <Routes>
+            <Route path = '/' element={<HomeSection/>}/>
+          </Routes>
+
           <div className="routes">
               <Routes>
                 <Route path="/fashion" element={<FashionSlider />} />
@@ -41,14 +38,10 @@ function App() {
                 <Route path="/accessory" element={<Accessory />} />
               </Routes>
             </div>
-          <Routes>
-            <Route path="/cart" element={<Ca element={<Layout />} />
-          </Routes>
-
+          
           <div className="browse">
             <div className="product-right-page">
               <Routes>
-                <Route path="/" element={<Home />} />
                 <Route path="/fashion" element={<Fashion />} />
                 <Route path="/shoes" element={<Shoes />} />
                 <Route path="/bag" element={<Bag />} />

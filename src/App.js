@@ -15,6 +15,7 @@ import BagSlider from "./SLIDER/BagSlider";
 import React from "react";
 import { CartProvider } from "./CartContext";
 import HomeSection from "./Section/Home/HomeSection";
+import HomeShop from "./Shop/HomeShop";
 
 
 
@@ -26,6 +27,7 @@ function App() {
         <Router>
           <Routes>
             <Route path = '/' element={<HomeSection/>}/>
+            <Route path = '/shop' element={<HomeShop/>}/>
           </Routes>
 
           <div className="routes">

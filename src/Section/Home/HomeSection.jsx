@@ -31,7 +31,7 @@ export default function HomeSection() {
                         <h1>Join With Us</h1>
                         <h2>To Protect Our Environment</h2>
                         <Link to ='/shop'>
-                            <Button>Get Start Shopping Here</Button>
+                            <Button>Review Products</Button>
                         </Link>
                     </Title>
                     

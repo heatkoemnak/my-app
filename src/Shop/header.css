@@ -1,4 +1,6 @@
 .main{
+    position: sticky;
+    top:0;
     background-color:#fffffa;
     max-width: 100%;
 }
@@ -50,7 +52,7 @@
 
 
 .middle-content{
-    height: 90vh;
+    height: 100vh;
     display: flex;
 
 }

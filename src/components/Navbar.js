@@ -35,13 +35,7 @@ function Navbar(props) {
               </ul>
             );
           })}
-          {/* <ul>
-            <Link to="">Home</Link>
-            <Link to="">Features</Link>
-            <Link to="">About</Link>
-            <Link to="">Contact</Link>
-            <Link to="">FAQ</Link>
-          </ul> */}
+         
         </div>
 
         <div className="Icons">

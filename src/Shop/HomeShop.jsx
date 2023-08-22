@@ -1,15 +1,19 @@
 import React from 'react'
 import Header from './Header'
 import Sidebar from './Sidebar'
-import Main from './Main'
 import Footer from './Footer'
+import MainPage from './MainPage'
+
 export default function HomeShop() {
   return (
     <>
     <Header/>
+    {/* <Sidebar/> */}
+    {/* <Main/> */}
+    
     <div className="middle-content">
       <Sidebar/>
-      <Main/>
+      <MainPage/>
     </div>
     
     <Footer/>

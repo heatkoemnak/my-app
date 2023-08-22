@@ -212,9 +212,9 @@ export default function AboutSection() {
                     <img src={chhaylin} alt=''/>
                 </div>
                 <div className='TextInfo' >
-                    <h2>Srun chhaylin</h2>
+                    <h2>Srun Chhaylin</h2>
                     <span>Role</span>
-                    <p>Check and Hosting</p>
+                    <p>Testing and Hosting</p>
                     <div className='icons'>
                             <FaFacebook className='icon'/>
                             <FaGithub className='icon'/>

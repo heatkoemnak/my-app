@@ -4,7 +4,11 @@ import { Link } from 'react-router-dom';
 export default function Footer() {
   return (
     <div>
+<<<<<<< HEAD
       <footer>
+=======
+      <footer className="bg-gray-800">
+>>>>>>> 0077fc1d8a36ccb21cf2b0cbed88a125c40fafd9
         <div className="container">
           <div className="wrap1">
             <div className="link-wrap">
@@ -72,6 +76,7 @@ export default function Footer() {
                 © 2021 Company, Inc. All Rights Reserved.
               </div>
               <div className="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">
+<<<<<<< HEAD
                 <Link to="">
                   <i className="uil uil-facebook-f"></i>
                 </Link>
@@ -90,6 +95,26 @@ export default function Footer() {
                 <Link to="">
                   <i className="uil uil-envelope"></i>
                 </Link>
+=======
+                <a href="#" className="w-6 mx-1">
+                  <i className="uil uil-facebook-f"></i>
+                </a>
+                <a href="#" className="w-6 mx-1">
+                  <i className="uil uil-twitter-alt"></i>
+                </a>
+                <a href="#" className="w-6 mx-1">
+                  <i className="uil uil-youtube"></i>
+                </a>
+                <a href="#" className="w-6 mx-1">
+                  <i className="uil uil-linkedin"></i>
+                </a>
+                <a href="#" className="w-6 mx-1">
+                  <i className="uil uil-instagram"></i>
+                </a>
+                <a href="#" className="w-6 mx-1">
+                  <i className="uil uil-envelope"></i>
+                </a>
+>>>>>>> 0077fc1d8a36ccb21cf2b0cbed88a125c40fafd9
               </div>
             </div>
           </div>

@@ -1,18 +1,19 @@
-import React from 'react'
-import Header from './Header'
-import Sidebar from './Sidebar'
-import Main from './Main'
-import Footer from './Footer'
+import React from 'react';
+import Header from './Header';
+import Sidebar from './Sidebar';
+import Footer from './Footer';
+import MainPage from './MainPage';
+
 export default function HomeShop() {
   return (
     <>
-    <Header/>
-    <div className="middle-content">
-      <Sidebar/>
-      <Main/>
-    </div>
-    
-    <Footer/>
+      <Header />
+      <div className="middle-content">
+        <Sidebar />
+        <MainPage />
+      </div>
+
+      <Footer />
     </>
-  )
+  );
 }

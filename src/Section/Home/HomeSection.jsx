@@ -12,7 +12,6 @@ import Navbar from '../../components/Navbar';
 
 import './home.css';
 import Overview from '../Overview/Overview';
-import Footer from '../Footer/Footer';
 
 export default function HomeSection() {
   return (
@@ -40,10 +39,7 @@ export default function HomeSection() {
       <Overview />
       <FeaturedSection />
       <AboutSection />
-<<<<<<< HEAD
-=======
-      <Footer />
->>>>>>> a2527555ae50325641b6ab7a3ed917bc0c1cc152
+
     </>
   );
 }

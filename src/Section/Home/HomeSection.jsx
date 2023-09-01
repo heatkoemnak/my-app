@@ -39,7 +39,6 @@ export default function HomeSection() {
       <Overview />
       <FeaturedSection />
       <AboutSection />
-
     </>
   );
 }

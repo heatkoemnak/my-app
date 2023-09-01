@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from 'react';
 import { styled } from 'styled-components';
 import landGreen from '../../asset/land-green.jpg';
@@ -112,5 +111,3 @@ const Button = styled.button`
         color: green;
     }
     `;
-=======
->>>>>>> 7021793f7aa7b9ef77b9338700878170859173d3

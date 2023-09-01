@@ -14,6 +14,7 @@ import './home.css';
 import Overview from '../Overview/Overview';
 
 export default function HomeSection() {
+
   return (
     <>
       <Navbar />
@@ -40,8 +41,10 @@ export default function HomeSection() {
       <FeaturedSection />
       <AboutSection />
     </>
+    
   );
 }
+
 
 const SearchANDTitle = styled.div`
   width: 100%;
